@@ -6,6 +6,13 @@
 # Folders
 _obj
 _test
+bin
+pkg
+src
+workspace
+triggers
+public
+build
 
 # Architecture specific extensions/prefixes
 *.[568vq]
@@ -21,4 +28,14 @@ _testmain.go
 
 *.exe
 *.test
-*.prof
+
+*.swo
+*.swp
+*.swn
+
+version.go
+
+.vagrant
+logs
+dev
+.DS_Store
