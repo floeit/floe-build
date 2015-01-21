@@ -42,15 +42,15 @@ test:
 	cd $(dev_folder); GOPATH=$(GOPATH) go test ./src/...
 
 package: build
-	-rm -rf build/pkg
-	-mkdir -p build/pkg/bin
+	-rm -rf rel/pkg
+	-mkdir -p rel/pkg/bin
 
-	cp $(dev_folder)/bin/* build/pkg/bin/
+	cp $(dev_folder)/bin/* rel/pkg/bin/
 
-	cp -r public build/pkg
+	cp -r public rel/pkg
 	
-	-mkdir build/releases
-	cd build; tar -czvf releases/pkg.tar pkg/
+	-mkdir rel/releases
+	cd rel; tar -czvf releases/pkg.tar pkg/
 
 clean:
 	rm -rf $(dev_folder)/pkg

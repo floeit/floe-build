@@ -12,7 +12,7 @@ src
 workspace
 triggers
 public
-build
+rel
 
 # Architecture specific extensions/prefixes
 *.[568vq]
