@@ -11,6 +11,7 @@ e.g.
 
 ````
 git@github.com:floeit/floe-build.git
+cd floe-build
 make create
 make build
 ````
